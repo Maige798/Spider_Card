@@ -1,12 +1,10 @@
 package zhizhu;
 
-import java.awt.Color;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
-
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
 
 public class GamePanel extends JPanel {
 
@@ -30,6 +28,15 @@ public class GamePanel extends JPanel {
         pushCards();
 
         // 初始化提示
+        Cache.updateMovePairs();
+    }
+
+    public GamePanel(boolean pushCards) {
+        this.setBackground(new Color(39, 139, 34));
+        GameTool.initRandomCard(Cache.level);
+        initCardLoc();
+        initMoveActionListener();
+        if (pushCards) pushCards();
         Cache.updateMovePairs();
     }
 

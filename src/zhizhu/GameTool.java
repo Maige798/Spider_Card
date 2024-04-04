@@ -60,7 +60,7 @@ public class GameTool {
             Cache.poolLists[i] = new CardList(i);
         }
         for (int i = 0; i < 6; i++) {
-            Cache.readyLists[i] = new CardList(i);
+            Cache.readyLists[i] = new CardList(-1);
         }
         for (int i = 0; i < 10; i++) {
             JLabel label = new JLabel(new ImageIcon(Cache.cardEmptyPic));
@@ -176,7 +176,6 @@ public class GameTool {
                 }
             }
         }
-        //System.out.println("GameTool.java getMoveCardFromNo 通过一个牌寻找该牌是来自哪一列 出错！");
     }
 
     /**
