@@ -23,6 +23,11 @@ public class CardList {
         this.number = number;
     }
 
+    public CardList(List<Card> list) {
+        this.list = list;
+        this.number = -1;
+    }
+
     /**
      * 移动若干张牌到另一个列 <Test>
      */
@@ -148,7 +153,6 @@ public class CardList {
             index--;
             currentNum++;
         }
-        if (moveCards.isEmpty()) return moveCards;
         return moveCards.get(moveCards.size() - 1).getNum() == targetNum - 1 ? moveCards : new ArrayList<>();
     }
 

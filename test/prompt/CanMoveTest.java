@@ -1,4 +1,6 @@
-import org.junit.Test;
+package prompt;
+
+import org.junit.jupiter.api.Test;
 import zhizhu.Card;
 import zhizhu.CardList;
 
