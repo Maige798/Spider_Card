@@ -1,9 +1,6 @@
 package zhizhu;
 
 import javax.swing.*;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Objects;
 
 
 public class Card extends JLabel {
@@ -133,10 +130,10 @@ public class Card extends JLabel {
 
     @Override
     public String toString() {
-        return "[" + type + num + "]";
+        return (isShow ? "[" : "[<Hidden>") + type + num + "]";
     }
 
-    @Override
+/*    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -147,9 +144,5 @@ public class Card extends JLabel {
     @Override
     public int hashCode() {
         return Objects.hash(type, num, isShow);
-    }
-
-    public static void main(String[] args) {
-        List<Card> list = List.of(new Card(Card.SPADE, 1, true));
-    }
+    }*/
 }

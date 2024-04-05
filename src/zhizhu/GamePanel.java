@@ -189,7 +189,6 @@ public class GamePanel extends JPanel {
         for (int i = 0; i < 10; i++) {
             Card card = Cache.readyLists[Cache.pushCardNum].getList().get(i);
             card.showCard();
-
             Cache.poolLists[i].getList().add(card);
             card.removeMouseListener(card.getMouseListeners()[0]);
 

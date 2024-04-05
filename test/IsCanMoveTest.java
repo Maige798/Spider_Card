@@ -7,6 +7,11 @@ import zhizhu.GameTool;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * GameTool.isCanMove方法的测试类
+ *
+ * @author 李梓扬
+ */
 public class IsCanMoveTest {
     @Test
     public void test1() {//移动的翻开的黑桃6

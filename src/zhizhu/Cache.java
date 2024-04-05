@@ -1,8 +1,7 @@
 package zhizhu;
 
+import javax.swing.*;
 import java.util.List;
-
-import javax.swing.JLabel;
 
 public class Cache {
     /** ≈∆≥ÿ≈∆∂— */
@@ -57,5 +56,17 @@ public class Cache {
         if (movePairs.isEmpty()) return;
         movePairs.get(movePairIndex).blink();
         movePairIndex = (movePairIndex + 1) % movePairs.size();
+    }
+
+    public static void show() {
+        System.out.println("-<Cache>----------------------------------------------");
+        System.out.println("pool lists:");
+        for (CardList poolList : poolLists) {
+            System.out.println(poolList);
+        }
+        System.out.println("readyLists");
+        for (CardList readyList : readyLists) {
+            System.out.println(readyList);
+        }
     }
 }

@@ -7,6 +7,7 @@ import zhizhu.CardList;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -27,7 +28,7 @@ public class GetMaxMoveCardsTest {
     }
 
     @Parameterized.Parameters
-    public static List<Object[]> data() {
+    public static Collection<Object[]> data() {
         Card s2 = new Card(Card.SPADE, 2, true);
         Card s3 = new Card(Card.SPADE, 3, true);
         Card s4 = new Card(Card.SPADE, 4, true);
