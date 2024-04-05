@@ -23,8 +23,6 @@ public class GameFrame extends JFrame implements ActionListener {
         GameTool.initCacheList();
 
         init();
-
-        Cache.show();
     }
 
     public void init() {
