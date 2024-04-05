@@ -77,7 +77,7 @@ public class MovePair implements Comparable<MovePair> {
         for (int i = 0; i < 10; i++) {
             if (i == poolListNum) continue;
             List<Card> moveCards = expectedNum == -1 ? poolLists[i].getMaxMoveCards() : poolLists[i].getCanMoveCards(expectedNum);
-            if (!moveCards.isEmpty()) pairs.add(new MovePair(moveCards, poolLists[i]));
+            if (!moveCards.isEmpty()) pairs.add(new MovePair(moveCards, poolLists[poolListNum]));
         }
         return pairs;
     }
