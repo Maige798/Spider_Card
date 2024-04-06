@@ -17,11 +17,7 @@ public class Const {
     public static final String CAOHUA = "caohua";
 
     public static final String FANGPIAN = "fangpian";
-
-
-    public static final int sumCards = 104;
-
-
+    
     // ÅÆµÄ¿í
     public static final int cardWidth = 71;
     // ÅÆµÄ¸ß

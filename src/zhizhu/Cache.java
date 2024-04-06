@@ -57,16 +57,4 @@ public class Cache {
         movePairs.get(movePairIndex).blink();
         movePairIndex = (movePairIndex + 1) % movePairs.size();
     }
-
-    public static void show() {
-        System.out.println("-<Cache>----------------------------------------------");
-        System.out.println("pool lists:");
-        for (CardList poolList : poolLists) {
-            System.out.println(poolList);
-        }
-        System.out.println("readyLists");
-        for (CardList readyList : readyLists) {
-            System.out.println(readyList);
-        }
-    }
 }

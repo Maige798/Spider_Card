@@ -73,10 +73,12 @@ public class MovePair implements Comparable<MovePair> {
     public static List<MovePair> getMovePairs(int poolListNum) {
         List<MovePair> pairs = new ArrayList<>();
         CardList[] poolLists = Cache.poolLists;
-        int expectedNum = poolLists[poolListNum].getLastNumber(); // poolLists[poolListNum]为空时，expectedNum为-1
+        int expectedNum = poolLists[poolListNum].getLastNumber();
+        // poolLists[poolListNum]为空时，expectedNum为-1
         for (int i = 0; i < 10; i++) {
             if (i == poolListNum) continue;
-            List<Card> moveCards = expectedNum == -1 ? poolLists[i].getMaxMoveCards() : poolLists[i].getCanMoveCards(expectedNum);
+            List<Card> moveCards = expectedNum == -1 ? poolLists[i].getMaxMoveCards()
+                    : poolLists[i].getCanMoveCards(expectedNum);
             if (!moveCards.isEmpty()) pairs.add(new MovePair(moveCards, poolLists[poolListNum]));
         }
         return pairs;

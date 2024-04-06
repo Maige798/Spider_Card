@@ -270,7 +270,7 @@ public class GameTool {
      * 记录一次移动牌的操作
      */
     public static void setStepToCache(int n, CardList clist) {
-        StepForBack st = null;// 准备记录移动动作
+        StepForBack st;// 准备记录移动动作
 
         // cs获取移动的牌
         List<Card> cs = new ArrayList<>(Cache.moveCards);

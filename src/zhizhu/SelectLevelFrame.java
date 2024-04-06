@@ -10,11 +10,11 @@ public class SelectLevelFrame extends JFrame {
      */
     private static final long serialVersionUID = 3424667996992933653L;
 
-    JRadioButton button1 = null;
+    JRadioButton button1;
 
-    JRadioButton button2 = null;
+    JRadioButton button2;
 
-    JRadioButton button3 = null;
+    JRadioButton button3;
 
     public SelectLevelFrame() {
         JPanel panel = new JPanel();

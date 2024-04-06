@@ -133,16 +133,4 @@ public class Card extends JLabel {
         return (isShow ? "[" : "[<Hidden>") + type + num + "]";
     }
 
-/*    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Card card = (Card) o;
-        return num == card.num && isShow == card.isShow && Objects.equals(type, card.type);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(type, num, isShow);
-    }*/
 }

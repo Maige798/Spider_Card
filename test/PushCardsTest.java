@@ -12,9 +12,9 @@ import java.util.List;
 public class PushCardsTest {
     private static GamePanel gamePanel;
 
-    private static Card s3 = new Card(Card.SPADE, 3, true);
+    private static final Card s3 = new Card(Card.SPADE, 3, true);
 
-    private static Card s6 = new Card(Card.SPADE, 6, true);
+    private static final Card s6 = new Card(Card.SPADE, 6, true);
 
     @BeforeClass
     public static void beforeClass() {
